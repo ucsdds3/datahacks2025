@@ -1,0 +1,254 @@
+
+/* --- Styling Overhead --- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* Main */
+    --base-bg: #f8f8f8;
+
+    /* Color vars */
+    --ds3-orange: #f58134;
+    --ds3-blue: #11b3c9;
+    --ds3-gray: #2e2e2e;
+    --ds3-orange-lighten: #f29c62;
+    --ds3-blue-lighten: #75c8d3;
+    --ds3-gray-lighten: #575757;
+
+    /* Places */
+    --first: gold;
+    --second: silver;
+    --third: #CD7F32;
+}
+body {
+    font-family: 'Poppins';
+    background-color: var(--base-bg);
+}
+
+/* --- Page Styling --- */
+/* Nav */
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 0.5rem;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+nav > a {
+    height: min-content;
+    display: inline-block;
+}
+nav a img {
+    height: 2.5rem;
+    width: auto;
+    background-color: white;
+    display: block;
+}
+#nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#nav-links a, #nav-links a:visited {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+}
+#nav-links a:last-child {
+    background-color: var(--ds3-orange);
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: 0.25s;
+}
+#nav-links a:last-child:hover {
+    background-color: var(--ds3-orange-lighten);
+}
+
+/* Main Sections */
+#center {
+    width: 95%;
+    margin: 3.5rem auto 0;
+}
+section {
+    padding: 2rem;
+}
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* Title */
+#title {
+    padding: 10rem;
+}
+#title > h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+#title #countdown {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin: auto;
+}
+.timebox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+/* About */
+#about {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+#about img {
+    width: 15%;
+    height: auto;
+}
+#about > div {
+    padding: 0 2rem;
+}
+#about h3 {
+    font-size: 2.5rem;
+}
+#about p {
+    font-size: 1.5rem;
+}
+
+/* Prizes */
+#prizes {
+    text-align: center;
+}
+#prizes p {
+    font-size: 1.3rem;
+}
+
+#prize-row {
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 66%;
+    margin: 1rem auto 5rem;
+    align-items: flex-end;
+    height: 20vh;
+}
+.prize-card { 
+    position: relative; 
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+.rising-card {
+    padding: 2rem 5rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.round-place { 
+    position: absolute;
+    border-radius: 100px;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    top: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+.rising-card ul { list-style-position: inside; }
+#prize-second .rising-card { height: 85%; }
+#prize-first .rising-card { height: 110%; }
+#prize-third .rising-card { height: 70%; }
+#prize-second .round-place { background-color: var(--first); }
+#prize-first .round-place { background-color: var(--second);}
+#prize-third .round-place { background-color: var(--third); }
+
+/* Sponsors */
+#sponsors p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+#sponsor-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 2rem auto;
+}
+.sponsor-card {
+    width: 10vw;
+    height: 10vh;
+    border: 1px solid black;
+}
+.sponsor-card .img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+.img .triangle {
+    position: absolute;
+    border: solid 30px ;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.triangle-gold { border-color:  transparent var(--first) var(--first) transparent !important;}
+.triangle-silver { border-color:  transparent var(--second) var(--second) transparent !important;}
+.triangle-bronze { border-color:  transparent var(--third) var(--third) transparent !important;}
+
+/* Timeline */
+
+
+/* Judging */
+
+
+/* FAQ */
+#qna-grid {
+    margin: 1rem auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-auto-rows: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+.qna {
+    margin: 1rem;
+}
+.qna span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.qna p {
+    font-size: 1.2rem;
+}
