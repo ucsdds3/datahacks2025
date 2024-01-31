@@ -280,3 +280,9 @@ button:hover {
     cursor: pointer;
     background-color: var(--ds3-orange-lighten);
 }
+
+.temp {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
