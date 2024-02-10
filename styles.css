@@ -8,7 +8,8 @@
 }
 :root {
     /* Main */
-    --base-bg: #f8f8f8;
+    --base-1: #d1f4f9;
+    --base-2: #002e31;
 
     /* Color vars */
     --ds3-orange: #f58134;
@@ -25,7 +26,8 @@
 }
 body {
     font-family: 'Poppins';
-    background-color: var(--base-bg);
+    background-color: var(--base-2);
+    color: white;
 }
 
 /* --- Page Styling --- */
@@ -37,12 +39,14 @@ nav {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     padding: 0.5rem;
     top: 0;
     left: 0;
     background-color: white;
     z-index: 2;
+    background-color: var(--base-1);
+    color: black;
 }
 nav > a {
     height: min-content;
@@ -93,6 +97,14 @@ section h2 {
 /* Title */
 #title {
     padding: 10rem;
+    background-image: url('/assets/banner.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vw;
+    height: 100vw;
+    margin: 0 0 0 -2.5vw;
+    color: black;
 }
 #title > h1 {
     font-size: 4rem;
@@ -101,19 +113,28 @@ section h2 {
 }
 #title #countdown {
     display: flex;
-    width: 35%;
     justify-content: space-between;
-    font-size: 2rem;
     margin: auto;
 }
 .timebox {
     display: flex;
     flex-direction: column;
+    flex: 1 1 0px;
+    flex-basis: 0;
     align-self: center;
     text-align: center;
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.81);
     border-radius: 5px;
     padding: 0.5rem 1rem;
+    color: white;
+    margin: 1rem;
+}
+.timebox span {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.timebox h6 {
+    font-size: 2rem;
 }
 #title h3 {
     text-align: center;
@@ -128,22 +149,24 @@ section h2 {
 
 /* About */
 #about {
+    padding: 0;
+}
+#about-wrap {
     display: flex;
     width: 80%;
     margin: auto;
+    justify-content: space-between;
 }
 #about img {
     width: 15%;
     height: auto;
 }
-#about > div {
-    padding: 0 2rem;
-}
 #about h3 {
     font-size: 2.5rem;
 }
-#about p {
+#about-wrap p {
     font-size: 1.5rem;
+    max-width: 85%;
 }
 
 /* Prizes */
