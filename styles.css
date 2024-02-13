@@ -320,3 +320,31 @@ button:hover {
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: var(--tertiary);
+    padding: 3rem;
+    text-align: center;
+}
+footer h1 {
+    font-size: 3rem;
+    font-weight: 450 !important;
+}
+footer #icon-row {
+    margin: 2rem auto;
+    /* justify-content: space-around;
+    display: flex;
+    width: 25%; */
+    text-align: center;
+}
+#icon-row a {
+    display: inline-block;
+    margin: 0 1rem;
+}
+#icon-row img {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
