@@ -103,9 +103,9 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0 0 0 -2.5vw;
     width: 100vw;
     height: 100vw;
-    margin: 0 0 0 -2.5vw;
     color: black;
 }
 #title > h1 {
@@ -115,7 +115,7 @@ section h2 {
 }
 #title #countdown {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
 }
 .timebox {
@@ -345,4 +345,195 @@ footer #icon-row {
     height: 50px;
     display: flex;
     align-items: center;
+}
+
+
+/* --- Mobile View --- */
+@media only screen and (max-width: 1000px) {
+    /* Adjusted Nav */
+    nav { padding: 0.25rem; }
+    nav a img { height: 3rem; }
+    #nav-links a, #nav-links a:visited { display: none; }
+    #nav-links a:last-child {
+        font-size: 1rem;
+        display: block;
+        border-radius: 7px;
+        margin: 0;
+    }
+
+    /* Adjusted Main */
+    #center {
+        width: 100vw;
+        margin: 3.5rem auto 0;
+    }
+    section {
+        padding: 2rem;
+    }
+    section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    /* Adjusted Title */
+    #title {
+        padding: 3rem;
+        background-image: url('/assets/imgs/banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 0 0 -2.5vw;
+        width: 100vw;
+        height: 100vw;
+        color: black;
+    }
+    #title > h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 1.5rem;
+    }
+    .timebox {
+        padding: 0.15rem 0.5rem;
+        margin: 0.4rem;
+    }
+    .timebox span {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .timebox h6 {
+        font-size: 1rem;
+    }
+    #title h3 {
+        text-align: center;
+        font-size: 1rem;
+        margin: 1em auto 0.5em;
+    }
+    #until-msg {
+        font-size: 1rem;
+    }
+
+    /* About */
+    #about { width: 100vw; }
+    #about-wrap {
+        width: 95vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about img {
+        height: auto;
+        width: 50%;
+        margin: auto;
+    }
+    #about h3 {
+        font-size: 2.5rem;
+    }
+    #about p {
+        margin: 1em auto;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    /* Prizes */
+    #prizes { padding: 0; }
+    #prizes p {
+        font-size: 1rem;
+        margin:  0 2rem;
+    }
+
+    #prize-row {
+        padding: 0.5rem;
+        margin: 2rem auto 5rem;
+        height: 25vh;
+        width: 100%;
+        position: relative;
+    }
+    .prize-card {
+        width: 29%;
+    }
+    .rising-card {
+        padding: 1.2rem 0;
+        font-size: 0.9rem;
+        border-radius: 5px;
+    }
+    .round-place { 
+        height: 6vh;
+        width: 6vh;
+        top: 10px;
+        left: 50%;
+        font-size: 1rem;
+        background-color: var(--ds3-orange) !important;
+    }
+    #prize-second .rising-card { padding-top: 7vh; }
+    #prize-first .rising-card { padding-top: 10vh; }
+    #prize-third .rising-card { padding-top: 1.1vh; }
+
+    /* Adjusted Sponsors */
+    #sponsors p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #sponsor-row {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+        margin: 2rem auto;
+    }
+    .sponsor-card {
+        width: 85vw;
+        height: 10vh;
+        border: 1px solid black;
+        margin: 1rem 0;
+    }
+    .sponsor-card .img {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+        background-color: white;
+    }
+    .img .triangle {
+        position: absolute;
+        border: solid 15px ;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    /* Adjusted FAQ */
+    #qna-grid {
+        margin: 1rem auto;
+        width: 100%;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .qna { margin: .5rem; }
+    .qna span { font-size: 1rem; }
+    .qna p { font-size: 0.9rem; }
+
+    /* Footer */
+    footer { padding:0.5rem; }
+    footer h1 {
+        font-size: 2rem;
+        font-weight: 450 !important;
+    }
+    footer #icon-row {
+        margin: 0.5rem auto 1rem;
+        text-align: center;
+    }
+    #icon-row a {
+        display: inline-block;
+        margin: 0 0.5rem;
+    }
+    #icon-row img {
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .temp {
+        display: none;
+    }
 }
