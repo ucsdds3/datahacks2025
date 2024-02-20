@@ -17,10 +17,16 @@ window.addEventListener('load', async () => {
     const hourTarget = document.getElementById("hours");
     const minuteTarget = document.getElementById("minutes");
     const secondTarget = document.getElementById("seconds");
+    const qnaTarget = document.querySelector('#qna-grid');
     const countdown = document.querySelector('#countdown');
     const tillMsg = document.querySelector('#until-msg');
     const times = config['times']
     let targetTime = times['start']
+
+    // Fill in FAQ
+    for (const [question, answer] of Object.entries(config['faq'])) {
+        qnaTarget.innerHTML += generateQnA(question, answer)
+    }
 
     // Start countdown
     let x = setInterval(() => {
@@ -95,4 +101,13 @@ function loadScrolling() {
             behavior: 'smooth'
         });
     });
+}
+
+function generateQnA(question, answer) {
+    return `
+    <div class="qna">
+        <span>Q: ${question}</span>
+        <p>A: ${answer}</p>
+    </div>
+    `
 }

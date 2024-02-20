@@ -3,5 +3,9 @@
         "start": "Apr 6, 2024 7:00:00",
         "end": "Apr 6, 2024 19:00:00"
     },
-    "signupLink": "https://www.ds3ucsd.com/"
+    "signupLink": "https://www.ds3ucsd.com/",
+    "faq": {
+        "Will there be food/drink served?": "Yes, thanks to our sponsor Quokka, there will be energy drinks and coffee. In addition, there will be meals provided.",
+        "Who is the event host?": "DataHacks 2024 is hosted by Data Science Student Society at UC San Diego."
+    }
 }
