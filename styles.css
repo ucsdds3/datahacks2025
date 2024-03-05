@@ -244,11 +244,18 @@ section h2 {
     justify-content: space-evenly;
     width: 75%;
     margin: 2rem auto;
+    flex-flow: row wrap;
 }
 .sponsor-card {
-    width: 10vw;
+    width: 15vw;
     height: 10vh;
     border: 1px solid black;
+    margin: 1rem;
+}
+.sponsor-card:nth-child(3n) {
+    page-break-after: always;
+    break-after: always;
+    background: silver;
 }
 .sponsor-card .img {
     height: 100%;
