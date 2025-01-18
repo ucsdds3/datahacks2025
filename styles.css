@@ -332,7 +332,7 @@ button:hover {
 footer {
     width: 100%;
     background-color: var(--tertiary);
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
 }
 footer h1 {
@@ -340,7 +340,8 @@ footer h1 {
     font-weight: 450 !important;
 }
 footer #icon-row {
-    margin: 2rem auto;
+    margin: 1rem auto;
+    margin-top: 2rem;
     /* justify-content: space-around;
     display: flex;
     width: 25%; */
