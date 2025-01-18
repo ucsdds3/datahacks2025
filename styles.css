@@ -99,6 +99,7 @@ section h2 {
 /* Title */
 #title {
     padding: 5rem;
+    padding-top:20vh;
     background-image: url('/assets/imgs/banner.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -113,32 +114,35 @@ section h2 {
 #title > h1 {
     font-size: 4rem;
     text-align: center;
-    margin: 1.5rem;
+    margin-top:1.5rem
 }
 #title #countdown {
     display: flex;
     justify-content: space-evenly;
     margin: auto;
+    height: min-content;
+    width:80%;
+    margin-top:1rem;
 }
 .timebox {
-    aspect-ratio: 1;
-    width:min-content;
+    aspect-ratio: 1/1;
+    height:12vw;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    justify-content: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.81);
     border-radius: 5px;
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     color: white;
-    margin: 1rem;
+    /* margin: 1rem; */
 }
 .timebox span {
-    font-size: 5rem;
+    font-size: 4vw;
     font-weight: bold;
 }
 .timebox h6 {
-    font-size: 2rem;
+    font-size: 2vw;
 }
 #title h3 {
     text-align: center;
