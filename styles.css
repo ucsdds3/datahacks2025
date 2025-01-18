@@ -166,7 +166,7 @@ section h2 {
     margin: 2rem auto;
 }
 #about img {
-    max-width: 15%;
+    max-width: 25%;
     height: auto;
     object-fit: contain;
 }
@@ -501,16 +501,21 @@ footer #icon-row {
     }
     #sponsor-row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        flex-direction: column;
+        /* flex-direction: column; */
         width: 100%;
         margin: 2rem auto;
+        gap: 1rem;
     }
     .sponsor-card {
         width: 85vw;
         height: 10vh;
         border: 1px solid black;
         margin: 1rem 0;
+    }
+    .sponsor-card:nth-child(3) {
+        width: 60%; /* Centered card spans a larger width */
     }
     .sponsor-card .img {
         height: 100%;
