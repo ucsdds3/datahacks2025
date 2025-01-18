@@ -39,14 +39,14 @@ window.addEventListener('load', async () => {
             if (calculateTimeDifference(times['end']) < 0) { // After the end
                 clearInterval(x);
                 countdown.innerHTML = `
-                    <h3>DataHacks 2024 has concluded!</h3>
+                    <h3>DataHacks 2025 has concluded!</h3>
                     <button onclick="location.href='https://www.ds3ucsd.com/'">Join us next year and check out DS3!</button><br>
                 `;
                 countdown.style.display = 'block';
                 countdown.style.textAlign = 'center';
             } else { // Between start and end
                 targetTime = times['end']
-                countdown.insertAdjacentHTML('beforebegin', "<h3>DataHacks 2024 has begun!</h3>")
+                countdown.insertAdjacentHTML('beforebegin', "<h3>DataHacks 2025 has begun!</h3>")
                 tillMsg.innerHTML = 'till DataHacks ends!'
                 distance = calculateTimeDifference(targetTime)
             }
