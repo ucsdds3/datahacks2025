@@ -1,179 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DataHacks 2024 | DS3 at UCSD</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="assets/imgs/datahacks-logo.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/imgs/datahacks-logo.png" />
     <script src="app.js"></script>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- Navbar -->
     <nav>
-        <a href="/"><img src="assets/imgs/datahacks-logo.png"></a>
-        <div id="nav-links">
-            <a href="#prizes">Prizes</a>
-            <a href="#sponsors">Sponsors</a>
-            <!-- <a href="#timeline">Timeline</a> -->
-            <!-- <a href="#judging">Judging</a> -->
-            <a href="#faq">FAQ</a>
-            <a href="https://datahacks-2024.devpost.com/" target="_blank" rel="noreferrer">Devpost</a>
-            <a href="https://ds3ucsd.notion.site/DataHacks-Handbook-2024-f90db151ba87433d9115c0253f0dbc93" target="_blank" rel="noreferrer">Hacker Guide</a>
-            <a class="signup" href="" target="_blank" rel="noreferrer">Sign Up</a>
-        </div>
+      <a href="/"><img src="assets/imgs/datahacks-logo.png" /></a>
+      <div id="nav-links">
+        <a href="#prizes">Prizes</a>
+        <a href="#sponsors">Sponsors</a>
+        <!-- <a href="#timeline">Timeline</a> -->
+        <!-- <a href="#judging">Judging</a> -->
+        <a href="#faq">FAQ</a>
+        <a
+          href="https://datahacks-2024.devpost.com/"
+          target="_blank"
+          rel="noreferrer"
+          >Devpost</a
+        >
+        <a
+          href="https://ds3ucsd.notion.site/DataHacks-Handbook-2024-f90db151ba87433d9115c0253f0dbc93"
+          target="_blank"
+          rel="noreferrer"
+          >Hacker Guide</a
+        >
+        <a class="signup" href="" target="_blank" rel="noreferrer">Sign Up</a>
+      </div>
     </nav>
 
     <!-- Main sections -->
     <div id="center">
+      <!-- Title View -->
+      <section id="title">
+        <h1>DATAHACKS 2025</h1>
+        <h2>Theme: Pop Culture | April 5-6, PC Ballroom West</h2>
+        <div id="countdown">
+          <div class="timebox">
+            <span id="days">x</span>
+            <h6>Days</h6>
+          </div>
+          <div class="timebox">
+            <span id="hours">x</span>
+            <h6>Hours</h6>
+          </div>
+          <div class="timebox">
+            <span id="minutes">x</span>
+            <h6>Minutes</h6>
+          </div>
+          <div class="timebox">
+            <span id="seconds">x</span>
+            <h6>Seconds</h6>
+          </div>
+        </div>
+        <h4 id="until-msg">till DataHacks begins!</h4>
+      </section>
 
-        <!-- Title View -->
-        <section id="title">
-            <h1>DATAHACKS 2024</h1>
-            <div id="countdown">
-                <div class="timebox">
-                    <span id="days">x</span>
-                    <h6>Days</h6>
-                </div>
-                <div class="timebox">
-                    <span id="hours">x</span>
-                    <h6>Hours</h6>
-                </div>
-                <div class="timebox">
-                    <span id="minutes">x</span>
-                    <h6>Minutes</h6>
-                </div>
-                <div class="timebox">
-                    <span id="seconds">x</span>
-                    <h6>Seconds</h6>
-                </div>
+      <section id="about">
+        <h2>Welcome to DS3 DataHacks 2024!</h2>
+        <div id="about-wrap">
+          <img src="assets/imgs/dino2.png" />
+          <p>
+            DataHacks is a hackathon event held at UC San Diego that encourages
+            students of all experience levels to leave the safety of their
+            Jupyter Notebook and delve deeper into Data Science. Created out of
+            pure passion, DataHacks hopes to educate those interested about the
+            realm Data Science and its potential. Those participating in
+            DataHacks will have the opportunity to create a project using data
+            given to them or wrangled and will compete against their peers for
+            the best project.
+          </p>
+        </div>
+      </section>
+
+      <!-- Prizes -->
+      <section id="prizes">
+        <h2>Prizes</h2>
+        <p>
+          Here are some prizes made possible by our generous sponsors! For more
+          prizes, see our devpost!
+        </p>
+
+        <div id="prize-row">
+          <div class="prize-card" id="prize-second">
+            <div class="round-place">2nd</div>
+            <div class="rising-card">
+              <ul>
+                <h3>2nd Place</h3>
+                <li>Speakers</li>
+              </ul>
             </div>
-            <h4 id="until-msg">till DataHacks begins!</h4>
-        </section>
-
-        <section id="about">
-            <h2>Welcome to DS3 DataHacks 2024!</h2>
-            <div id="about-wrap">
-                <img src="assets/imgs/dino2.png">
-                <p>DataHacks is a hackathon event held at UC San Diego that encourages students of all experience levels to leave the safety of their Jupyter Notebook and delve deeper into Data Science. Created out of pure passion, DataHacks hopes to educate those interested about the realm Data Science and its potential. Those participating in DataHacks will have the opportunity to create a project using data given to them or wrangled and will compete against their peers for the best project.</p>
+          </div>
+          <div class="prize-card" id="prize-first">
+            <div class="round-place">1st</div>
+            <div class="rising-card">
+              <ul>
+                <h3>1st Place</h3>
+                <li>$400 Keyboard</li>
+                <li>2 Keycaps Set</li>
+                <li>1 Deskmat</li>
+              </ul>
             </div>
-        </section>
-
-        <!-- Prizes -->
-        <section id="prizes">
-            <h2>Prizes</h2>
-            <p>Here are some prizes made possible by our generous sponsors! For more prizes, see our devpost!</p>
-
-            <div id="prize-row">
-                <div class="prize-card" id="prize-second">
-                    <div class="round-place">2nd</div>
-                    <div class="rising-card">
-                        <ul>
-                            <h3>2nd Place</h3>
-                            <li>Speakers</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="prize-card" id="prize-first">
-                    <div class="round-place">1st</div>
-                    <div class="rising-card">
-                        <ul>
-                            <h3>1st Place</h3>
-                            <li>$400 Keyboard</li>
-                            <li>2 Keycaps Set</li>
-                            <li>1 Deskmat</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="prize-card" id="prize-third">
-                    <div class="round-place">3rd</div>
-                    <div class="rising-card">
-                        <ul>
-                            <h3>3rd Place</h3>
-                            <li>Dino Plushies</li>
-                        </ul>
-                    </div>
-                </div>
+          </div>
+          <div class="prize-card" id="prize-third">
+            <div class="round-place">3rd</div>
+            <div class="rising-card">
+              <ul>
+                <h3>3rd Place</h3>
+                <li>Dino Plushies</li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sponsors -->
-        <section id="sponsors">
-            <h2>Our Sponsors</h2>
-            <p>Thank you to our sponsors!</p>
+      <!-- Sponsors -->
+      <section id="sponsors">
+        <h2>Our Sponsors</h2>
+        <p>Thank you to our sponsors!</p>
 
-            <div id="sponsor-row">
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/quokka.jpg);">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/trace3.png);">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/netapp.jpg);">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/converge.png); background-color:white;">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/ucsdkeebs.png);">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/nicu.png); background-color:white;">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
-                <div class="sponsor-card">
-                    <div class="img" style="background-image: url(/assets/imgs/padres.png); background-color:white;">
-                        <div class="triangle triangle-bronze"></div>
-                    </div>
-                </div>
+        <div id="sponsor-row">
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="background-image: url(/assets/imgs/quokka.jpg)"
+            >
+              <div class="triangle triangle-bronze"></div>
             </div>
-        </section>
+          </div>
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="background-image: url(/assets/imgs/trace3.png)"
+            >
+              <div class="triangle triangle-bronze"></div>
+            </div>
+          </div>
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="background-image: url(/assets/imgs/netapp.jpg)"
+            >
+              <div class="triangle triangle-bronze"></div>
+            </div>
+          </div>
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="
+                background-image: url(/assets/imgs/converge.png);
+                background-color: white;
+              "
+            >
+              <div class="triangle triangle-bronze"></div>
+            </div>
+          </div>
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="background-image: url(/assets/imgs/ucsdkeebs.png)"
+            >
+              <div class="triangle triangle-bronze"></div>
+            </div>
+          </div>
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="
+                background-image: url(/assets/imgs/nicu.png);
+                background-color: white;
+              "
+            >
+              <div class="triangle triangle-bronze"></div>
+            </div>
+          </div>
+          <div class="sponsor-card">
+            <div
+              class="img"
+              style="
+                background-image: url(/assets/imgs/padres.png);
+                background-color: white;
+              "
+            >
+              <div class="triangle triangle-bronze"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Timeline -->
-        <!-- <section id="timeline">
+      <!-- Timeline -->
+      <!-- <section id="timeline">
             <h2>Timeline</h2>
             <div class="temp"><img src="https://cdn.discordapp.com/attachments/942218891952783421/1202323796670034070/image.png?ex=65cd0a4b&is=65ba954b&hm=45f6bc11be8877dbd40c3e3fe23757221c5da40be550171bbddf42a943b9d3e6&"></div>
         </section> -->
 
-        <!-- Judging Criteria -->
-        <!-- <section id="judging">
+      <!-- Judging Criteria -->
+      <!-- <section id="judging">
             <h2>Judging Criteria</h2>
             <div class="temp"><img src="https://cdn.discordapp.com/attachments/942218891952783421/1202323826063720579/image.png?ex=65cd0a52&is=65ba9552&hm=9f6251387ec9491699af2d5f8ddca43ed32717b2e08f144b787ad814cd3595dc&"></div>
         </section> -->
 
-        <!-- FAQ -->
-        <section id="faq">
-            <h2>FAQ</h2>
+      <!-- FAQ -->
+      <section id="faq">
+        <h2>FAQ</h2>
 
-            <div id="qna-grid"><!-- Direct Injected using config --></div>
-        </section>
-
+        <div id="qna-grid"><!-- Direct Injected using config --></div>
+      </section>
     </div>
 
     <footer>
-        <h1>Connect with us</h1>
-        <div id="icon-row">
-            <a href="https://www.facebook.com/DS3UCSD/" target="_blank" rel="noreferrer" id="facebook"><img src="assets/icons/facebook_icon.svg"></a>
-            <a href="https://discord.com/invite/NqHx8h3" target="_blank" rel="noreferrer" id="discord"><img src="assets/icons/discord_icon.svg"></a>
-            <a href="mailto:ds3@ucsd.edu" target="_blank" rel="noreferrer" id="email"><img src="assets/icons/email_icon.svg"></a>
-            <a href="https://medium.com/ds3ucsd" target="_blank" rel="noreferrer" id="medium"><img src="assets/icons/medium_icon.svg"></a>
-            <a href="https://www.instagram.com/ds3.ucsd/?hl=en" target="_blank" rel="noreferrer" id="instagram"><img src="assets/icons/instagram_icon.svg"></a>
-            <a href="https://open.spotify.com/show/7yHiQn4eqjy2EAzRNEmQdf" target="_blank" rel="noreferrer" id="spotify"><img src="assets/icons/spotify_icon.svg"></a>
-        </div>
+      <h1>Connect with us</h1>
+      <div id="icon-row">
+        <a
+          href="https://www.facebook.com/DS3UCSD/"
+          target="_blank"
+          rel="noreferrer"
+          id="facebook"
+          ><img src="assets/icons/facebook_icon.svg"
+        /></a>
+        <a
+          href="https://discord.com/invite/NqHx8h3"
+          target="_blank"
+          rel="noreferrer"
+          id="discord"
+          ><img src="assets/icons/discord_icon.svg"
+        /></a>
+        <a
+          href="mailto:ds3@ucsd.edu"
+          target="_blank"
+          rel="noreferrer"
+          id="email"
+          ><img src="assets/icons/email_icon.svg"
+        /></a>
+        <a
+          href="https://medium.com/ds3ucsd"
+          target="_blank"
+          rel="noreferrer"
+          id="medium"
+          ><img src="assets/icons/medium_icon.svg"
+        /></a>
+        <a
+          href="https://www.instagram.com/ds3.ucsd/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+          id="instagram"
+          ><img src="assets/icons/instagram_icon.svg"
+        /></a>
+        <a
+          href="https://open.spotify.com/show/7yHiQn4eqjy2EAzRNEmQdf"
+          target="_blank"
+          rel="noreferrer"
+          id="spotify"
+          ><img src="assets/icons/spotify_icon.svg"
+        /></a>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
