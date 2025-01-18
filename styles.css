@@ -98,7 +98,7 @@ section h2 {
 
 /* Title */
 #title {
-    padding: 10rem;
+    padding: 5rem;
     background-image: url('/assets/imgs/banner.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,8 @@ section h2 {
     height: 100vw;
     margin:0;
     color: black;
-    top:0; left:0
+    top:0; 
+    left:0;
 }
 #title > h1 {
     font-size: 4rem;
@@ -120,10 +121,10 @@ section h2 {
     margin: auto;
 }
 .timebox {
+    aspect-ratio: 1;
+    width:min-content;
     display: flex;
     flex-direction: column;
-    flex: 1 1 0px;
-    flex-basis: 0;
     align-self: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.81);
@@ -406,14 +407,13 @@ footer #icon-row {
         width: 100vw;
         height: 100vw;
         color: black;
-        margin: 0 0 0 -2.5vw;
     }
     #title > h1 {
         font-size: 3rem;
         text-align: center;
         margin: 1.5rem;
     }
-    .timebox {
+    /* .timebox {
         padding: 0.15rem 0.5rem;
         margin: 0.4rem;
     }
@@ -423,7 +423,7 @@ footer #icon-row {
     }
     .timebox h6 {
         font-size: 1rem;
-    }
+    } */
     #title h3 {
         text-align: center;
         font-size: 1rem;
