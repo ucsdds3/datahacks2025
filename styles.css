@@ -151,8 +151,15 @@ section h2 {
 }
 #until-msg {
     text-align: center;
-    margin: 1em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1rem;
     font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.81);
+    border-radius: 5px;
+    padding: 0 2rem;
+    width:fit-content;
+    color:white;
 }
 
 /* About */
@@ -447,7 +454,7 @@ footer #icon-row {
     }
     #until-msg {
         font-size: 1rem;
-        color:white
+        color:white;
     }
 
     /* About */
@@ -523,11 +530,6 @@ footer #icon-row {
         border: 1px solid black;
         margin: 1rem 0;
     }
-    /* .sponsor-card:nth-child(3) {
-        margin-let:auto;
-
-        width: 60%; /* Centered card spans a larger width */
-    } */
     .sponsor-card .img {
         height: 100%;
         width: 100%;
