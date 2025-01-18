@@ -243,42 +243,49 @@ section h2 {
 /* Sponsors */
 #sponsors p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Make text smaller */
 }
+
 #sponsor-row {
     display: flex;
-    justify-content: space-evenly;
-    width: 75%;
-    margin: 2rem auto;
-    flex-flow: row wrap;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    justify-content: center; /* Centers the row contents */
+    gap: 1rem; /* Adds spacing between cards */
+    width: 70%; /* Reduce the overall width for a more compact layout */
+    margin: 1.5rem auto; /* Adjust margins */
 }
+
+/* Sponsor Card Styling */
 .sponsor-card {
-    width: 15vw;
-    height: 10vh;
+    flex: 1; /* Reduce width of cards */
+    height: 8rem; /* Reduce card height */
     border: 1px solid black;
-    margin: 1rem;
+    margin: 0; /* No extra margin needed */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures proper containment of content */
 }
-.sponsor-card:nth-child(3n) {
-    page-break-after: always;
-    break-after: always;
-    background: silver;
+
+/* Adjust "Coming Soon" card specifically */
+.sponsor-card:nth-child(3) {
+    flex: 1;
+    text-align: center; /* Optional: center-align text/content */
+    color: rgba(0,0,0,0);
+    background-color: #F58134;
 }
+
+/* Background Images */
 .sponsor-card .img {
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    position: relative;
-    background-color: white;
 }
-.img .triangle {
-    position: absolute;
-    border: solid 30px ;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-}
+
+
+
 .triangle-gold { border-color:  transparent var(--first) var(--first) transparent !important;}
 .triangle-silver { border-color:  transparent var(--second) var(--second) transparent !important;}
 .triangle-bronze { border-color:  transparent var(--third) var(--third) transparent !important;}
