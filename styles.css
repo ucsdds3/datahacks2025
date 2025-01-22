@@ -301,21 +301,33 @@ section h2 {
     margin: 1rem auto;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Flexible columns */
+    gap: 1.5rem; /* Consistent spacing between items */
     justify-content: space-between;
-    align-items: center;
-    vertical-align: middle;
+    align-items: start; /* Align text to the top */
+    color: black;
 }
+
 .qna {
-    margin: 1rem;
+    margin: 0; /* Remove margin to prevent spacing issues in the grid */
+    padding: 1rem;
+    border: 1px solid #ccc; /* Optional: Add a border for better separation */
+    border-radius: 8px; /* Optional: Rounded corners */
+    background-color: #fff; /* Optional: Background color */
+    box-sizing: border-box; /* Ensure proper sizing */
+    min-height: 210px;
 }
+
 .qna span {
     font-size: 1.3rem;
     font-weight: bold;
+    margin-bottom: 0.5rem; /* Add space below the question */
 }
+
 .qna p {
     font-size: 1.2rem;
+    line-height: 1.5; /* Improve readability */
+    margin: 0;
 }
 
 /* Bonus */
