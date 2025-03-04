@@ -1,11 +1,18 @@
+import trace3 from "/src/Assets/Images/trace3.png"
+import netapp from "/src/Assets/Images/netapp.jpg"
+import github from "/src/Assets/Images/github.png"
+import kwibbles from "/src/Assets/Images/kwibbles.png"
+import warp from "/src/Assets/Images/warp.png"
+import coming_soon from "/src/Assets/Images/coming_soon.jpg"
+
 const Sponsers = () => {
   const sponsers = {
-    "Trace3": "/src/Assets/Images/trace3.png",
-    "NetApp": "/src/Assets/Images/netapp.jpg",
-    "GitHub": "/src/Assets/Images/github.png",
-    "Kwibbles": "/src/Assets/Images/kwibbles.png",
-    "Warp": "/src/Assets/Images/warp.png",
-    "Coming Soon": "/src/Assets/Images/coming_soon.jpg"
+    "Trace3": trace3,
+    "NetApp": netapp,
+    "Github": github,
+    "Kwibbles": kwibbles,
+    "Warp": warp,
+    "Coming Soon": coming_soon
   }
 
   return (

@@ -18,7 +18,7 @@ const App = () => {
         <Sponsers />
         <FAQ questions={info.faq} />
       </div>
-      <Footer links={info.links} />
+      <Footer />
     </div>
   );
 };

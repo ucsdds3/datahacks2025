@@ -12,38 +12,6 @@
     "Can we use old projects/code?": "All projects must be done during the event and thus, no old projects/code are to be turned in.",
     "Other questions?": "Feel free to email us at ds3@ucsd.edu for any other questions you may have!"
   },
-  "links": [
-    {
-      "name": "Facebook",
-      "link": "https://www.facebook.com/DS3UCSD/",
-      "icon": "/src/Assets/Icons/facebook_icon.svg"
-    },
-    {
-      "name": "Discord",
-      "link": "https://discord.com/invite/NqHx8h3",
-      "icon": "/src/Assets/Icons/discord_icon.svg"
-    },
-    {
-      "name": "Email",
-      "link": "mailto:ds3@ucsd.edu",
-      "icon": "/src/Assets/Icons/email_icon.svg"
-    },
-    {
-      "name": "Medium",
-      "link": "https://medium.com/ds3ucsd",
-      "icon": "/src/Assets/Icons/medium_icon.svg"
-    },
-    {
-      "name": "Instagram",
-      "link": "https://www.instagram.com/ds3.ucsd/?hl=en",
-      "icon": "/src/Assets/Icons/instagram_icon.svg"
-    },
-    {
-      "name": "Spotify",
-      "link": "https://open.spotify.com/show/7yHiQn4eqjy2EAzRNEmQdf",
-      "icon": "/src/Assets/Icons/spotify_icon.svg"
-    }
-  ],
   "old_questions": {
     "Will there be food/drink served?": "Yes, thanks to our sponsor Quokka, there will be energy drinks and coffee. In addition, there will be meals provided."
   }
