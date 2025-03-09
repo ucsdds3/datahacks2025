@@ -6,7 +6,7 @@ import Sponsers from "./Components/Sponsers";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
 import info from "./info.json";
-
+import "./index.css";
 const App = () => {
   return (
     <div>

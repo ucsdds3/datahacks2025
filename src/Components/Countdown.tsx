@@ -31,21 +31,29 @@ const Countdown = ({ setSubHeading }: CountdownProps) => {
           timeLeft = end - now;
         } else {
           // Countdown has ended
-          setFormattedTime({ days: "X", hours: "X", minutes: "X", seconds: "X" });
+          setFormattedTime({
+            days: "X",
+            hours: "X",
+            minutes: "X",
+            seconds: "X",
+          });
           setSubHeading("has concluded!");
           return;
         }
       }
 
-      const days = String(Math.floor(timeLeft / (1000 * 60 * 60 * 24))).padStart(2, "0");
+      const days = String(
+        Math.floor(timeLeft / (1000 * 60 * 60 * 24))
+      ).padStart(2, "0");
       const hours = String(
         Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
       ).padStart(2, "0");
-      const minutes = String(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))).padStart(
-        2,
-        "0"
-      );
-      const seconds = String(Math.floor((timeLeft % (1000 * 60)) / 1000)).padStart(2, "0");
+      const minutes = String(
+        Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))
+      ).padStart(2, "0");
+      const seconds = String(
+        Math.floor((timeLeft % (1000 * 60)) / 1000)
+      ).padStart(2, "0");
       setFormattedTime({ days, hours, minutes, seconds });
     };
 
@@ -53,13 +61,15 @@ const Countdown = ({ setSubHeading }: CountdownProps) => {
     return () => clearInterval(interval);
   }, [targetTime, start, end]);
 
-  const isCountdownActive = Object.values(formattedTime).some((value) => value !== "X");
+  const isCountdownActive = Object.values(formattedTime).some(
+    (value) => value !== "X"
+  );
 
   return (
     <div className={`text-center ${!isCountdownActive && "mt-4"}`}>
       {isCountdownActive ? (
         <div>
-          <div className="flex gap-10 p-4">
+          <div className="flex gap-1 md:gap-4 p-4">
             {Object.entries(formattedTime).map(([key, value], index) => (
               <TimeBox key={index} time={value!} label={key} />
             ))}
@@ -81,9 +91,9 @@ const Countdown = ({ setSubHeading }: CountdownProps) => {
 
 const TimeBox = ({ time, label }: { time: string; label: string }) => {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#000] opacity-80 text-white rounded-lg p-2 w-[12vw] h-[12vw]">
-      <span className="text-8xl font-bold">{time}</span>
-      <h6 className="text-lg font-bold">{label}</h6>
+    <div className="flex  flex-col items-center justify-center bg-[#000] opacity-80 text-white rounded-lg p-2 w-[clamp(5.5rem,12vw,7rem)] aspect-square ">
+      <span className="text-[clamp(2rem,2vw,5rem)] font-bold">{time}</span>
+      <h6 className="text-[clamp(1rem,1vw,3rem)] font-bold">{label}</h6>
     </div>
   );
 };
