@@ -1,10 +1,11 @@
 const Prizes = () => {
-  const podiumClass = "w-[5vw] border-white border-2 text-center text-white text-3xl pt-4";
+  const podiumClass =
+    "w-20 border-white border-2 text-center text-white text-3xl pt-4";
 
   return (
     <div className="flex flex-col gap-20 items-center">
       <h3 className="text-5xl font-bold text-white">Prizes</h3>
-      <div className="flex justify-center items-end gap-10">
+      <div className="flex justify-between items-end gap-2">
         <div className="flex flex-col items-center">
           <div className="text-white text-3xl pb-4">TBD</div>
           <div className={`${podiumClass} h-[30vh]`}>2</div>

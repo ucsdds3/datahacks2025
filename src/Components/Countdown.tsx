@@ -13,7 +13,7 @@ const Countdown = ({ setSubHeading }: CountdownProps) => {
     days: "00",
     hours: "00",
     minutes: "00",
-    seconds: "00",
+    seconds: "00"
   });
   const [untilMsg, setUntilMsg] = useState("Until DataHacks begins!");
   const [targetTime, setTargetTime] = useState(start);
@@ -35,7 +35,7 @@ const Countdown = ({ setSubHeading }: CountdownProps) => {
             days: "X",
             hours: "X",
             minutes: "X",
-            seconds: "X",
+            seconds: "X"
           });
           setSubHeading("has concluded!");
           return;
@@ -91,7 +91,7 @@ const Countdown = ({ setSubHeading }: CountdownProps) => {
 
 const TimeBox = ({ time, label }: { time: string; label: string }) => {
   return (
-    <div className="flex  flex-col items-center justify-center bg-[#000] opacity-80 text-white rounded-lg p-2 w-[clamp(5.5rem,12vw,7rem)] aspect-square ">
+    <div className="flex  flex-col items-center justify-center bg-[#000] opacity-80 text-white rounded-lg p-2 w-[clamp(4.5rem,12vw,7rem)] aspect-square ">
       <span className="text-[clamp(2rem,2vw,5rem)] font-bold">{time}</span>
       <h6 className="text-[clamp(1rem,1vw,3rem)] font-bold">{label}</h6>
     </div>

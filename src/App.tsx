@@ -12,7 +12,7 @@ const App = () => {
     <div>
       <Navbar />
       <Landing />
-      <div className="bg-[#012E31] flex flex-col items-center gap-[10vh] px-[10vw] py-[10vh]">
+      <div className="bg-[#012E31] flex flex-col items-center gap-[10vh] md:px-[10vw] xl:px-[20vw] p-5 py-[10vh] ">
         <Description />
         <Prizes />
         <Sponsers />
