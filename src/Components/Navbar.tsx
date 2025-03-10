@@ -61,7 +61,7 @@ const Buttons = () => {
     if (ref) {
       const offset = 0.12 * window.innerHeight;
       const topPosition = ref.current?.getBoundingClientRect().top! + window.scrollY - offset;
-  
+
       window.scrollTo({
         top: topPosition,
         behavior: "smooth",
@@ -81,7 +81,13 @@ const Buttons = () => {
         FAQ
       </button>
       <button className={btnClass}>Devpost</button>
-      <button className={btnClass}>Hacker Guide</button>
+      <a
+        href="https://sites.google.com/u/0/d/1iTwbKviMY4g2dVD3iAQ08iESCG66_u75/p/1GVxha23ZrYK60O4zTKNHnRJrXBMEu_C_/preview"
+        target="_blank"
+        className={btnClass}
+      >
+        Hacker Guide
+      </a>
       <a
         href="https://forms.fillout.com/t/5MJ4HUiZF5us"
         target="_blank"

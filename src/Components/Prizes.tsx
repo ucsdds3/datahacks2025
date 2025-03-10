@@ -1,23 +1,48 @@
-const Prizes = () => {
-  const podiumClass =
-    "w-20 border-white border-2 text-center text-white text-3xl pt-4";
+import advanced from "/src/Assets/Images/Prizes/advanced_prize.webp";
+import intermediate from "/src/Assets/Images/Prizes/intermediate_prize.webp";
+import beginner from "/src/Assets/Images/Prizes/beginner_prize.jpg";
 
+const Prizes = () => {
   return (
-    <div id="prizes" className="flex flex-col gap-20 items-center">
+    <div id="prizes" className="flex flex-col gap-10 items-center">
       <h3 className="text-5xl font-bold text-white">Prizes</h3>
-      <div className="flex justify-between items-end gap-2">
-        <div className="flex flex-col items-center">
-          <div className="text-white text-3xl pb-4">TBD</div>
-          <div className={`${podiumClass} h-[30vh]`}>2</div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-white text-3xl pb-4">TBD</div>
-          <div className={`${podiumClass} h-[40vh]`}>1</div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="text-white text-3xl pb-4">TBD</div>
-          <div className={`${podiumClass} h-[20vh]`}>3</div>
-        </div>
+      <div className="flex justify-between items-end gap-[clamp(0.2rem,1vw,2.5rem)]">
+        <Podium
+          hieght="23vh"
+          title="Logitech G502 HERO"
+          category="Intermediate"
+          image={intermediate}
+        />
+        <Podium hieght="28vh" title="✨Premium Keyboard✨" category="Advanced" image={advanced} />
+        <Podium hieght="18vh" title="JBL Clip 4" category="Beginner" image={beginner} />
+      </div>
+      <p className="text-white text-[clamp(1rem,1.7vw,2.5rem)] text-center">
+        Other prizes include Deskmats, Pop Funkos, Smiskis, and Owalas!
+      </p>
+    </div>
+  );
+};
+
+interface PodiumProps {
+  hieght: string;
+  title: string;
+  category: string;
+  image: string;
+}
+
+const Podium = ({ hieght, title, category, image }: PodiumProps) => {
+  return (
+    <div className="w-[clamp(7.5rem,20vw,30rem)] flex flex-col items-center gap-[clamp(0.2rem,1vw,2.5rem)]">
+      <h4 className="text-[clamp(0.65rem,1.7vw,2.5rem)] text-white text-center">{title}</h4>
+      <img
+        src={image}
+        alt={title}
+        className="rounded-lg border-2 border-white w-full h-full object-contain"
+      />
+      <div
+        className={`bg-[#315654] w-full border-white border-2 rounded text-center text-white text-[clamp(1rem,1.7vw,2.5rem)] pt-4 h-[${hieght}]`}
+      >
+        {category}
       </div>
     </div>
   );

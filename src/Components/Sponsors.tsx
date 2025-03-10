@@ -1,11 +1,11 @@
-import trace3 from "/src/Assets/Images/trace3.png";
-import netapp from "/src/Assets/Images/netapp.jpg";
-import github from "/src/Assets/Images/github.png";
-import kwibbles from "/src/Assets/Images/kwibbles.png";
-import warp from "/src/Assets/Images/warp.png";
-import basement from "/src/Assets/Images/basement.png";
-import launchpad from "/src/Assets/Images/launchpad.png";
-import milktype from "/src/Assets/Images/milktype.png";
+import trace3 from "/src/Assets/Images/Sponsors/trace3.png";
+import netapp from "/src/Assets/Images/Sponsors/netapp.jpg";
+import github from "/src/Assets/Images/Sponsors/github.png";
+import kwibbles from "/src/Assets/Images/Sponsors/kwibbles.png";
+import warp from "/src/Assets/Images/Sponsors/warp.png";
+import basement from "/src/Assets/Images/Sponsors/basement.png";
+import launchpad from "/src/Assets/Images/Sponsors/launchpad.png";
+import milktype from "/src/Assets/Images/Sponsors/milktype.png";
 
 const Sponsors = () => {
   const sponsors = {
