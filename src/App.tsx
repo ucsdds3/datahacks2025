@@ -2,7 +2,7 @@ import Landing from "./Components/Landing";
 import Navbar from "./Components/Navbar";
 import Description from "./Components/Description";
 import Prizes from "./Components/Prizes";
-import Sponsers from "./Components/Sponsers";
+import Sponsers from "./Components/Sponsors";
 import FAQ from "./Components/FAQ";
 import Footer from "./Components/Footer";
 import info from "./info.json";

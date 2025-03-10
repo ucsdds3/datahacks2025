@@ -3,7 +3,7 @@ const Prizes = () => {
     "w-20 border-white border-2 text-center text-white text-3xl pt-4";
 
   return (
-    <div className="flex flex-col gap-20 items-center">
+    <div id="prizes" className="flex flex-col gap-20 items-center">
       <h3 className="text-5xl font-bold text-white">Prizes</h3>
       <div className="flex justify-between items-end gap-2">
         <div className="flex flex-col items-center">

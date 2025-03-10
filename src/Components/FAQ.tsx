@@ -14,7 +14,7 @@ const FAQ = ({ questions }: FAQProps) => {
   };
 
   return (
-    <div className="flex flex-col items-center lg:w-[60vw] w-[95vw] font-albert-sans">
+    <div id="faq" className="flex flex-col items-center lg:w-[60vw] w-[95vw] font-albert-sans">
       <h3 className="text-5xl font-bold text-white">FAQ</h3>
       {Object.entries(questions).map(([question, answer], index) => (
         <FAQQuestion
