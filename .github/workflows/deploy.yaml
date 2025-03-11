@@ -43,7 +43,7 @@ jobs:
           path: ./dist
 
       - name: Add CNAME file
-        run: echo 'datahacks-staging.ds3ucsd.com' > ./dist/CNAME
+        run: echo 'datahacks.ds3ucsd.com' > ./dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
