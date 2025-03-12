@@ -4,7 +4,7 @@ import github from "/src/Assets/Images/Sponsors/github.png";
 import kwibbles from "/src/Assets/Images/Sponsors/kwibbles.png";
 import warp from "/src/Assets/Images/Sponsors/warp.png";
 import basement from "/src/Assets/Images/Sponsors/basement.png";
-import launchpad from "/src/Assets/Images/Sponsors/launchpad.png";
+import acorns from "/src/Assets/Images/Sponsors/acorns.jpg";
 import milktype from "/src/Assets/Images/Sponsors/milktype.png";
 
 const Sponsors = () => {
@@ -15,13 +15,13 @@ const Sponsors = () => {
     Kwibbles: kwibbles,
     Warp: warp,
     Basement: basement,
-    Launchpad: launchpad,
+    Acorns: acorns,
     Milktype: milktype,
   };
 
   return (
     <div id="sponsors" className="flex flex-col gap-4 items-center">
-      <h3 className="text-5xl font-bold text-white">Sponsers</h3>
+      <h3 className="text-5xl font-bold text-white">Sponsors</h3>
       <p className="text-white text-2xl">Thank you to our sponsors!</p>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(clamp(200px,10vw,300px),1fr))] w-[70vw] gap-x-4 gap-y-10 mt-4 content-center place-content-center">
         {Object.entries(sponsors).map(([name, src]) => (
