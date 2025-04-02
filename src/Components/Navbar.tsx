@@ -60,7 +60,8 @@ const Buttons = () => {
   const scroll = (ref: React.RefObject<HTMLElement | null>) => {
     if (ref) {
       const offset = 0.12 * window.innerHeight;
-      const topPosition = ref.current?.getBoundingClientRect().top! + window.scrollY - offset;
+      const top = ref.current?.getBoundingClientRect().top;
+      const topPosition = top! + window.scrollY - offset;
 
       window.scrollTo({
         top: topPosition,
@@ -80,7 +81,15 @@ const Buttons = () => {
       <button className={btnClass} onClick={() => scroll(faqRef)}>
         FAQ
       </button>
-      <button className={btnClass}>Devpost</button>
+      <a
+        href={
+          "https://datahacks-25.devpost.com/?_gl=1*sal0w7*_gcl_au*MTI3NzgzODg4MS4xNzQxNjM3ODc1*_ga*NjE1Njk5ODkzLjE3NDE2Mzc4NzU.*_ga_0YHJK3Y10M*MTc0MzU3NjQyMy43LjEuMTc0MzU3Njg2Mi4wLjAuMA"
+        }
+        target="_blank"
+        className={btnClass}
+      >
+        Devpost
+      </a>
       <a
         href="https://sites.google.com/u/0/d/1iTwbKviMY4g2dVD3iAQ08iESCG66_u75/p/1GVxha23ZrYK60O4zTKNHnRJrXBMEu_C_/preview"
         target="_blank"
