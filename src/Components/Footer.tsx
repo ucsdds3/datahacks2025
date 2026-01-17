@@ -42,7 +42,7 @@ const Footer = () => {
   return (
     <div className="bg-[#2C5E63] min-h-[15vh] py-[clamp(10px,2vh,20px)] px-[clamp(3px,10vw,500px)] flex items-center gap-2">
       <p className="text-white text-lg w-full">
-        © DS3 DataHacks 2025 | All rights reserved
+        © DS3 DataHacks 2026 | All rights reserved
       </p>
       <div className=" grid grid-cols-[repeat(auto-fit,minmax(40px,1fr))] w-full gap-2 ">
         {links.map((link) => (

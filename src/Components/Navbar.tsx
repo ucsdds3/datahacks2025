@@ -33,7 +33,7 @@ const Navbar = () => {
     );
   else {
     return (
-      <div className="sticky top-0 bg-[#D1F4F9]/50 backdrop-filter backdrop-blur-sm h-[10vh] flex items-center z-100">
+      <div className="sticky top-0 h-[10vh] flex items-center z-100 bg-transparent">
         <button className="ml-5 hover:cursor-pointer w-[8vh]">
           <img src={Logo} alt="Logo" />
         </button>

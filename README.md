@@ -1,6 +1,6 @@
-# Datahacks 2025 Website
+# Datahacks 2026 Website
 
-This is the website for Datahacks 2025!
+This is the website for Datahacks 2026!
 
 DataHacks is a hackathon event held at UC San Diego that encourages students of all experience levels to leave the safety of their Jupyter Notebook and delve deeper into Data Science.
 
