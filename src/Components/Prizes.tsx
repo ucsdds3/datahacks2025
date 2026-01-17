@@ -1,6 +1,6 @@
-import advanced from "/src/Assets/Images/Prizes/advanced_prize.webp";
-import intermediate from "/src/Assets/Images/Prizes/intermediate_prize.webp";
-import beginner from "/src/Assets/Images/Prizes/beginner_prize.jpg";
+// import advanced from "/src/Assets/Images/Prizes/advanced_prize.webp";
+// import intermediate from "/src/Assets/Images/Prizes/intermediate_prize.webp";
+// import beginner from "/src/Assets/Images/Prizes/beginner_prize.jpg";
 
 const Prizes = () => {
   return (
@@ -39,30 +39,30 @@ const Prizes = () => {
   );
 };
 
-interface PodiumProps {
-  height: string;
-  title: string;
-  category: string;
-  image: string;
-}
+// interface PodiumProps {
+//   height: string;
+//   title: string;
+//   category: string;
+//   image: string;
+// }
 
-const Podium = ({ height, title, category, image }: PodiumProps) => {
-  return (
-    <div className="w-[clamp(7.5rem,20vw,30rem)] flex flex-col items-center gap-[clamp(0.2rem,1vw,2.5rem)]">
-      <h4 className="text-[clamp(0.65rem,1.7vw,2.5rem)] text-white text-center">{title}</h4>
-      <img
-        src={image}
-        alt={title}
-        className="rounded-lg border-2 border-white w-full h-full object-contain"
-      />
-      <div
-        className="bg-[#315654] w-full border-white border-2 rounded text-center text-white text-[clamp(1rem,1.7vw,2.5rem)] pt-4"
-        style={{ height }}
-      >
-        {category}
-      </div>
-    </div>
-  );
-};
+// const Podium = ({ height, title, category, image }: PodiumProps) => {
+//   return (
+//     <div className="w-[clamp(7.5rem,20vw,30rem)] flex flex-col items-center gap-[clamp(0.2rem,1vw,2.5rem)]">
+//       <h4 className="text-[clamp(0.65rem,1.7vw,2.5rem)] text-white text-center">{title}</h4>
+//       <img
+//         src={image}
+//         alt={title}
+//         className="rounded-lg border-2 border-white w-full h-full object-contain"
+//       />
+//       <div
+//         className="bg-[#315654] w-full border-white border-2 rounded text-center text-white text-[clamp(1rem,1.7vw,2.5rem)] pt-4"
+//         style={{ height }}
+//       >
+//         {category}
+//       </div>
+//     </div>
+//   );
+// };
 
 export default Prizes;
