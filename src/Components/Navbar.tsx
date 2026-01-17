@@ -46,7 +46,9 @@ const Navbar = () => {
 };
 
 const Buttons = () => {
-  const btnClass = "hover:cursor-pointer hover:underline text-right";
+  const btnClass =
+    "hover:cursor-pointer hover:bg-white/20 transition-all duration-200 px-4 py-2 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20";
+
   const prizesRef = useRef<HTMLElement | null>(null);
   const sponsorsRef = useRef<HTMLElement | null>(null);
   const faqRef = useRef<HTMLElement | null>(null);
@@ -81,26 +83,30 @@ const Buttons = () => {
       <button className={btnClass} onClick={() => scroll(faqRef)}>
         FAQ
       </button>
+
       <a
-        href={
-          "https://datahacks-25.devpost.com/?_gl=1*sal0w7*_gcl_au*MTI3NzgzODg4MS4xNzQxNjM3ODc1*_ga*NjE1Njk5ODkzLjE3NDE2Mzc4NzU.*_ga_0YHJK3Y10M*MTc0MzU3NjQyMy43LjEuMTc0MzU3Njg2Mi4wLjAuMA"
-        }
+        href="https://datahacks-25.devpost.com/"
         target="_blank"
+        rel="noopener noreferrer"
         className={btnClass}
       >
         Devpost
       </a>
+
       <a
         href="https://sites.google.com/u/0/d/1iTwbKviMY4g2dVD3iAQ08iESCG66_u75/p/1GVxha23ZrYK60O4zTKNHnRJrXBMEu_C_/preview"
         target="_blank"
+        rel="noopener noreferrer"
         className={btnClass}
       >
         Hacker Guide
       </a>
+
       <a
         href="https://forms.fillout.com/t/5MJ4HUiZF5us"
         target="_blank"
-        className="hover:cursor-pointer hover:brightness-95 duration-150 bg-orange-500 text-white px-4 py-2 rounded font-bold"
+        rel="noopener noreferrer"
+        className="hover:cursor-pointer hover:brightness-110 transition-all duration-200 bg-orange-500 text-white px-5 py-2 rounded-lg font-semibold shadow-lg"
       >
         Sign Up
       </a>

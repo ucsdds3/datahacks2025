@@ -6,7 +6,7 @@ const Landing = () => {
   const [subHeading, setSubHeading] = useState("April 18-19, 2026 @ PC Ballroom West");
 
   return (
-    <div className="flex flex-col gap-4 items-center pt-[25vh] min-h-screen">
+    <div className="flex flex-col gap-4 items-center pt-[30vh] min-h-screen">
       <div
         className="absolute inset-0 bg-cover z-[-1] h-[120vh]"
         style={{ backgroundImage: `url(${banner})` }}
