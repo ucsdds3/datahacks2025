@@ -1,9 +1,9 @@
 // import React from "react";
 
 // Placeholder image paths – replace with real event photos later
-import photo1 from "../Assets/Images/banner.png";
-import photo2 from "../Assets/Images/banner.png";
-import photo3 from "../Assets/Images/banner.png";
+import photo1 from "../Assets/Images/photo1.png";
+import photo2 from "../Assets/Images/photo2.png";
+import photo3 from "../Assets/Images/photo3.png";
 
 const Description = () => {
   return (
